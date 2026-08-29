@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Krushak Hithaishi",
+    "slug": "krushak-hithaishi",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": ["android", "ios"],
+    "scheme": "krushak",
+    "android": {
+      "package": "com.krushak.hithaishi",
+      "permissions": ["CAMERA", "RECORD_AUDIO", "ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "ios": {
+      "bundleIdentifier": "com.krushak.hithaishi",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Used to photograph crop leaves for disease detection.",
+        "NSLocationWhenInUseUsageDescription": "Used to find nearby agricultural shops by distance.",
+        "NSMicrophoneUsageDescription": "Not used; required by the camera module."
+      }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Krushak Hithaishi to use the camera to scan leaves.",
+          "microphonePermission": "Microphone access is not required."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Used to find nearby agricultural shops by distance."
+        }
+      ]
+    ]
+  }
+}

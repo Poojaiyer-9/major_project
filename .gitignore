@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Secrets / local config
+*.local
+
+# Large model binaries (keep out of git; document instead)
+backend/models/krushak.tflite
+
+# Generated TTS audio (served at runtime)
+backend/static/voice/
+mobile/assets/voice/
+
+# Node / Expo
+node_modules/
+.expo/
+npm-debug.log
+yarn-error.log
+.DS_Store
+
+# Editor / OS
+.vscode/
+.idea/
